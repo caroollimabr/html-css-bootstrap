@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Contém as informações internas para config da página-->
+	<meta charset="UTF-8">
+	<title>Contato - Barbearia Alura</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<!--Limpa todo estilo default para que não entre em conflito com o que criamos.
+			Precisa colocar aqui para não limpar nossas escolhas-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<!--Cabeçalho-->
+		<div class="caixa">
+			<!--div é divisão ou bloco de conteúdo, não muda nada no layout, geralmente usada para mudar o estilo-->
+			<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1> <!-- h1: Primeiro a ser exibido-->
+
+			<nav>
+				<!--Navegação: Barra da parte de cima da página que te leva a outras páginas-->
+				<ul>
+					<!--lista não numerada-->
+					<li><a href="index.html">Home</a></li>
+					<!--<li></li> para cada elemento da lista-->
+					<li><a href="produtos.html">Produtos</a></li>
+					<!--<a></a> Anchor: Link vai te levar para outra página-->
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<form>
+			<!--Tag formulário-->
+			<label for="nomesobrenome">Nome completo</label>
+			<input type="text" id="nomesobrenome" class="input-padrao" required>
+			<!--required: não permite ir para a outra página-->
+
+			<!--Label é uma etiqueta/rótulo para a entrada de dados (formulário), usada junto com o input-->
+			<label for="email">E-mail</label>
+			<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+			<label for="mensagem">Mensagem</label>
+			<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+			<!--textarea cria uma área de texto com linhas (rows) e colunas (cols)-->
+
+			<fieldset>
+				<!--Agrupa elementos relacionados dentro de um form-->
+				<legend>Como prefere o nosso contato?</legend>
+				<!--Título para o bloco fieldset-->
+				<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">
+					E-mail</label>
+				<!--radio só deixa vc marcar uma opção de todas-->
+
+				<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+					Telefone</label>
+
+				<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+						checked> WhatsApp</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Qual horário prefere ser atendido?</legend>
+				<select>
+					<option>Manhã</option>
+					<!--Select: caixa que vc clica e pode escolher uma opção (option)-->
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+
+			<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por
+				email?</label>
+			<!--Checkbox coloca uma única caixinha para checar ou não-->
+
+			<input type="submit" value="Enviar formulário" class="enviar">
+		</form>
+
+		<table>
+			<!--Tabela-->
+			<tr>
+				<!--A cada linha-->
+				<td>Dia</td>
+				<td>Horário de funcionamento</td>
+			</tr>
+			<tr>
+				<td>Segunda-feira</td>
+				<td>Das 8h às 20h</td>
+			</tr>
+			<tr>
+				<td>Quarta-feira</td>
+				<td>Das 8h às 20h</td>
+			</tr>
+			<tr>
+				<td>Sexta-feira</td>
+				<td>Das 8h às 20h</td>
+			</tr>
+		</table>
+	</main>
+
+	<footer>
+		<!--Footer: área do rodapé-->
+		<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+		<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		<!--&copy; - unicode copyright-->
+	</footer>
+</body>
+
+</html>

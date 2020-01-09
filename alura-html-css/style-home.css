@@ -1,0 +1,49 @@
+#banner {
+	width:100%; /*largura comumente utilizada na Web*/
+}
+
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px /*pode ser small ou large também*/
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens {
+	font-style: italic
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+ul {
+	display: inline-block; /*display: inline (conteúdo da tag é do tamanho mencionado) e 
+	block (tamanho sempre 100% da página)*/
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%; /*margem à direita, alinha a div: calculada automaticamente de acordo com a tela*/
+}
+
+.imagembeneficios {
+	width: 50%;
+}
